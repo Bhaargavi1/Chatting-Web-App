@@ -1,0 +1,12 @@
+The first page is the php.html in the forms 
+It contains 3 forms 
+Login -- you can login if you are already registered -- which goes to server files -- 
+      login.php which checks for username and password 
+Register -- you can register if you are a new member -- which goes to server files -- 
+      action.php which takes the entire data in the database created by data.sql in Database
+In case you have already registered and you have forgotten your password you can 
+      click forgot password -- 3rd form opens which asks for the mail id registered
+      then you have a choice to either update the password or get your old one 
+      using reset.php and confirm.php in Server files 
+
+After successfully logging in you are directed to chat files 

@@ -1,0 +1,28 @@
+body{
+    background-image: url("../assets/images/bg1.jpg");
+}
+.head{
+    font-size:35px;
+    font-weight: bold;
+    color:brown;
+    text-align:center;
+    margin-top:35px;
+}
+.head2{
+    color:black;
+    text-align: center;
+    margin-top:10px;
+}
+.options{
+    margin-top:30px;
+}
+.card{
+    margin-top:20px;
+}
+section{
+    height:40%;
+    font-size:25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top:10px;  
+}

@@ -1,0 +1,91 @@
+<!Doctype HTML>
+<html lang="en-US">
+<head>
+<meta charset = "UTF-8">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, user-scalable=yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Register</title>
+<link rel="stylesheet" href="assets/css/w3css.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+<div class = 'row'>
+    <div class = 'col-lg-4 col-md-2'></div>
+    <div class = 'col-lg-7 col-md-5 col-sm-4 col-xs-4'>
+        <div id="form1" class="w3-card-4">
+            <div  class = "w3-container head">
+                <h1 class = "text-center w3-text-red">Login Form</h1>
+            </div>
+            <form action = "Forms/Server/login.php" method = "post" class=" w3-container w3-text-blue">
+                <div class="row w3-section">
+                        <div class="w3-col labels col-lg-3 col-md-3 col-sm-3 col-xs-3">Login:</div>
+                        <input class="w3-input ip col-lg-7 col-md-7 col-sm-6 col-xs-6" name="loginid" type="text" placeholder="User Name"  required>
+                </div>
+                <div class="row w3-section" >
+                        <div class="w3-col labels col-lg-3 col-md-3 col-sm-3 col-xs-3">Password:</div>
+                        <input class="w3-input ip col-lg-7 col-md-7 col-sm-6 col-xs-6" id="tick" name="pass12" type="password" placeholder="Password"  required>
+                    </div>
+                <div class = 'row'>
+                    <div class = 'col-lg-3 col-md-3 col-sm-6 col-xs-6'>
+                        <span id ="cursor" onclick="changepass()" class = "w3-text-red"><ins>forgot password??</ins></span> 
+                    </div>
+                    <div class = 'col-lg-5 col-md-5 col-sm-7 col-xs-7'>
+                        <button class="w3-blue w3-ripple submit">Submit</button>
+                    </div>
+                    <div class = 'col-lg-4 col-md-4 col-sm-6 col-xs-6'>
+                        <input type="checkbox" name="passw" class="check" onchange="show()" style="margin-left:30px">
+                        <label class = 'w3-text-red'>Show Password</label>
+                    </div>
+                </div><br>
+            </form>
+        <div class = "register">Don't have an account yet?&nbsp;&rarr;
+        <span onclick="register()" class = "register_button">Register here</span></div>
+    </div>
+        <div id="form2" class="w3-card-4">
+            <div  class = "w3-container head" style="background-color:seagreen">
+                <h1 class = "text-center">Register Here</h1>
+            </div>
+            <form action = "Forms/Server/register.php"  method="post" class=" w3-container  w3-text-blue"  enctype="multipart/form-data">
+                <div class="row w3-section">
+                    <div class="w3-col label_form col-lg-3 col-md-3 col-sm-3 col-xs-3">First Name:</div><input class="w3-input ip col-lg-7 col-md-7 col-sm-6 col-xs-6" name="fname" type="text" placeholder="Rani"  required>
+                </div>
+                <div class="row w3-section">
+                    <div class="w3-col label_form col-lg-3 col-md-3 col-sm-3 col-xs-3">Last Name:</div><input class="w3-input ip col-lg-7 col-md-7 col-sm-6 col-xs-6" name="lname" type="text" placeholder="Goyal"  required>
+                </div>
+                <div class="row w3-section">
+                    <div class="w3-col label_form col-lg-3 col-md-3 col-sm-3 col-xs-3">Email:</div>
+                    <input class="w3-input ip col-lg-7 col-md-7 col-sm-6 col-xs-6" name="email" type="email" placeholder="rani@gmail.com"  required>
+                </div>
+                <div class="row w3-section">
+                    <div class="w3-col label_form col-lg-3 col-md-3 col-sm-3 col-xs-3">User Name:</div><input class="w3-input ip col-lg-7 col-md-7 col-sm-6 col-xs-6" name="username" type="text" placeholder="rani123"  required>
+                </div>
+                <div class="row w3-section">
+                    <div class="w3-col label_form col-lg-3 col-md-3 col-sm-3 col-xs-3">Password:</div><input class="w3-input ip col-lg-7 col-md-7 col-sm-6 col-xs-6" name="psw" id = "tick2" type="password" required>
+                </div>
+                <input type="checkbox" name="passw" class="check" onchange="show()" style="margin-left:320px">
+                <span class = "w3-text-red" style="font-size: 15px;">Show Password</span>
+                <input type ="submit" class = "submit submit2"><br>
+            </form>
+        </div>
+        <div id="form3" class="w3-card-4 ">
+            <div  class = "w3-container head">
+                <h1 class = "text-center w3-color-red">Resetting Password</h1>
+            </div>
+            <form action = "Forms/Server/reset_password.php" method = "post" class=" w3-container  w3-text-blue">
+                <div class="row w3-section">
+                    <div class="w3-col labels col-lg-3 col-md-3 col-sm-3 col-xs-3">Email</div>
+                    <input class="w3-input col-lg-7 col-md-7 col-sm-8 col-xs-8" name="email123" type="email" placeholder="Enter Email-id"  required>
+                </div>
+                <button class="w3-blue w3-ripple submit3">Send Confirmation Link</button>
+            </form>
+        </div>
+    </div>
+ </div>
+    
+<script type = "text/javascript" src = "assets/javascript/jquery.js" ></script> 
+<script type = "text/javascript" src = "assets/javascript/bootstrap_min.js" ></script> 
+<script type = "text/javascript" src = "assets/javascript/form.js" ></script>       
+</body>
+</html>
